@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "dias_laborados" >= 10;
-aggregate sum column "salario";
+filter column "diagnostico" == "ansiedad";
+filter column "edad" < 35;
+aggregate average column "dias_laborados";
 print;

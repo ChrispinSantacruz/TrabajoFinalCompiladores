@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "pais" == "Argentina";
-aggregate count column "id_paciente";
+filter column "diagnostico" == "hipertensión";
+filter column "diagnostico" == "asma";
+aggregate average column "salario";
 print;

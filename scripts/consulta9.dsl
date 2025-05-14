@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "edad" >= 60;
-aggregate average column "salario";
+filter column "diagnostico" == "depresión";
+filter column "diagnostico" == "ansiedad";
+aggregate count column "id_paciente";
 print;

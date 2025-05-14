@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "dias_laborados" < 15;
-aggregate sum column "salario";
+filter column "edad" > 60;
+filter column "diagnostico" == "diabetes";
+aggregate count column "id_paciente";
 print;

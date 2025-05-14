@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "diagnostico" == "ansiedad";
+filter column "pais" == "Perú";
+filter column "diagnostico" == "asma";
 aggregate count column "id_paciente";
 print;

@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "edad" > 30;
-aggregate sum column "salario";
+filter column "edad" >= 40;
+filter column "edad" <= 25;
+aggregate sum column "dias_laborados";
 print;

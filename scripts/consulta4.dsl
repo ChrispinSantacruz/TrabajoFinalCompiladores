@@ -1,4 +1,4 @@
 load "dataset/dataset_pacientes.csv";
-filter column "pais" == "Perú";
-aggregate sum column "salario";
+filter column "edad" < 40;
+aggregate average column "dias_laborados";
 print;

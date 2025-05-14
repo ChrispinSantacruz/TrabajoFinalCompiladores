@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "dias_laborados" < 20;
+filter column "pais" == "Perú";
+filter column "pais" == "Chile";
 aggregate sum column "salario";
 print;

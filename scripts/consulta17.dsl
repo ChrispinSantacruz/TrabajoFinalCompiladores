@@ -1,4 +1,5 @@
 load "dataset/dataset_pacientes.csv";
-filter column "edad" < 25;
-aggregate average column "salario";
+filter column "pais" == "Colombia";
+filter column "diagnostico" == "hipertensión";
+aggregate count column "id_paciente";
 print;
